@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dmitru/Проекты VisualCode/Terminal/main.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+stdbool.h
+-
+signal.h
+-
+string.h
+-
+limits.h
+-
+sys/wait.h
+-
+

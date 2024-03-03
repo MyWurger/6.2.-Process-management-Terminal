@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/dmitru/Проекты VisualCode/Terminal/build",
+  "command": "gcc    -Wall -fsanitize=address -g   -o CMakeFiles/TERMINAL.dir/main.c.o   -c \"/home/dmitru/Проекты VisualCode/Terminal/main.c\"",
+  "file": "/home/dmitru/Проекты VisualCode/Terminal/main.c"
+}
+]
