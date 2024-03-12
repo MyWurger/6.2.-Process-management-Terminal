@@ -126,9 +126,10 @@ void Ctrl_plus_C(int sig)            // сигнал, который нужно 
         }// while()
 
         // выводим PID процесса, который убит алгоритмом FIFO
-         printf("Убит процесс %d\n", head_list->PID);
+        printf("Убит процесс %d\n", head_list->PID);
         // перемещаем дочерний процесс в состояние "зомби"
         kill(head_list->PID, SIGTERM);
+
         // ожидание завершения нашего зомби-процесса
         waitpid(head_list->PID, NULL, 0);
 
@@ -139,7 +140,7 @@ void Ctrl_plus_C(int sig)            // сигнал, который нужно 
 
     // просьба ввода новой команды. Т.к. буфер вывода неактивен до ближайшего ввода
     char cwd[256];                   // массив для хранения текущего рабочего каталога
-    getcwd(cwd, sizeof(cwd)) != NULL;
+    getcwd(cwd, sizeof(cwd));
     printf("\n\033[38;5;46m%s\033[0m \033[38;5;63m$\033[0m ", cwd);
     fflush(stdout);                  // вынимаем немедленно всё содержимое буфера вывода
     return;                          // вернули обещанное значение
@@ -373,7 +374,7 @@ int main()
     while(true)
     {
         char cwd[256];                // массив для хранения текущего рабочего каталога
-        getcwd(cwd, sizeof(cwd)) != NULL;
+        getcwd(cwd, sizeof(cwd));
         printf("\033[38;5;46m%s\033[0m ", cwd);
         read_line(&line);             // читаем введённую строку
         
