@@ -24,11 +24,11 @@
 	ProcessorClockFrequency="2600"
 	>
 	<Testing>
-		<StartDateTime>Mar 12 13:31 MSK</StartDateTime>
-		<StartTestTime>1710239504</StartTestTime>
+		<StartDateTime>Mar 12 17:41 MSK</StartDateTime>
+		<StartTestTime>1710254514</StartTestTime>
 		<TestList/>
-		<EndDateTime>Mar 12 13:31 MSK</EndDateTime>
-		<EndTestTime>1710239504</EndTestTime>
+		<EndDateTime>Mar 12 17:41 MSK</EndDateTime>
+		<EndTestTime>1710254514</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
